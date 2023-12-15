@@ -11,6 +11,13 @@ export default function Home() {
     return (
         <div className="h-screen w-screen p-20">
             <div className="flex flex-col gap-10">
+                <div>
+                    {lista.map((pessoa, idx)=> {
+                        return (
+                            <li>{pessoa.nome} - {pessoa.idade}</li>
+                        )
+                    })}
+                </div>
                 <Quadrado />
                 <QuadradoAzul nome={'ismael'} sobrenome={'gomes'} />
                 <Circulo nome={'bolinha'} sobrenome={'computador'}/>
